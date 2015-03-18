@@ -36,6 +36,9 @@ gem 'spring',        group: :development
 
 gem 'puma'
 
+# Rake for Travis CI
+gem 'rake'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
