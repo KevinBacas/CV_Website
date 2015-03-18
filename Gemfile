@@ -1,45 +1,71 @@
 source 'https://rubygems.org'
 
-# Cowsay
-gem 'cowsay'
-
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.8'
+
+# Database
 # Use postgresql as the database for Active Record
 gem 'pg'
-gem 'rails_12factor', group: :production
-gem 'puma'
+
+# HTML
+# Use HAML for html
+gem 'haml', '>= 4.0.5'
+
+# CSS
+# Foundation framework for css
+gem 'foundation-rails', '>= 5.4.3.0'
+gem 'foundation-icons-sass-rails'
 # Use SCSS for stylesheets
-gem 'sass-rails', '~> 4.0.3'
+gem 'sass-rails', '>= 4.0.3'
+
+# Javascript
+# Use jquery as the JavaScript library
+gem 'jquery-rails', '>= 3.1.2'
+# Use AngulasJS
+gem 'angularjs-rails', '>= 1.2.22'
+# Use CoffeeScript for .js.coffee assets and views
+gem 'coffee-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
-# Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.0.0'
-# See https://github.com/sstephenson/execjs#readme for more supported runtimes
-# gem 'therubyracer',  platforms: :ruby
+# Use RequireJS to manage package for Javascript
+gem 'requirejs-rails'
 
-# Use jquery as the JavaScript library
-gem 'jquery-rails'
+# Utilities
+# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+gem 'jbuilder', '>= 2.0'
+# Use ActiveModel has_secure_password
+gem 'bcrypt', '>= 3.1.7' # For security reasons, >= 2.1.4 is necessary
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
-# bundle exec rake doc:rails generates the API under doc/api.
-gem 'sdoc', '~> 0.4.0',          group: :doc
+# Data management
+gem 'default_value_for'
 
-# Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
-gem 'spring',        group: :development
+# Authentication
+gem 'omniauth'
+gem 'devise'
 
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
+# Development only
+group :development do
+  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
+  gem 'debugger'
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'spring'
+end
 
-gem 'puma'
+# Test only
+group :test do
+  # Rake for Travis CI
+  gem 'rake'
+end
 
-# Rake for Travis CI
-gem 'rake'
+# Production only
+group :production do
+  gem 'rails_12factor', group: :production
+  gem 'puma'
+end
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
+# RANDOM
+# Cowsay
+gem 'cowsay'
+# A data faker
+gem 'faker', '>= 1.4.3'
