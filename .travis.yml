@@ -7,3 +7,5 @@ rvm:
   - ruby-head
   - jruby-head
   - ree
+notifications:
+  slack: kevbac:neToW1cmiP0lQOc1WcBg75bL
