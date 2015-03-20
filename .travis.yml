@@ -17,3 +17,4 @@ test:
   username: postgres
 notifications:
   slack: kevbac:neToW1cmiP0lQOc1WcBg75bL
+cache: bundler
