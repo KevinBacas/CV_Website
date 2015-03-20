@@ -11,9 +11,6 @@
       = yield
     %footer.row
       - if Rails.env.development?
-        %br
-        %br
-        %br
         .panel
           = debug(params)
     = javascript_include_tag 'welcome'
