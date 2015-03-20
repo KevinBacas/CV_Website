@@ -1,0 +1,19 @@
+!!!
+%html
+  %head
+    %title
+      A soft Hellooooooooooooooooooooooooooooooooooooooooooooooo
+    = stylesheet_link_tag 'welcome', media: 'all'
+    = csrf_meta_tags
+    = javascript_include_tag "vendor/modernizr"
+  %body
+    .row.panel
+      = yield
+    %footer.row
+      - if Rails.env.development?
+        %br
+        %br
+        %br
+        .panel
+          = debug(params)
+    = javascript_include_tag 'welcome'
