@@ -1,6 +1,12 @@
-//= require foundation
-//= require foundation-icons
+@import "foundation/_settings";
+@import "foundation";
+@import "foundation-icons";
 
 .fi-heart {
   color : red;
+  transition: padding 0.5s, color 0.5s;
+  &:hover {
+    padding-left: 15px;
+    color: hotpink;
+  }
 }
