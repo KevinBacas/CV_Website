@@ -17,6 +17,8 @@ gem 'foundation-rails', '>= 5.4.3.0'
 gem 'foundation-icons-sass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 4.0.3'
+# Font Awesome for sass
+gem 'font-awesome-sass', '~> 4.3.0'
 
 # Javascript
 # Use jquery as the JavaScript library

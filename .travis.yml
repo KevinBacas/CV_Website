@@ -17,4 +17,7 @@ test:
   username: postgres
 notifications:
   slack: kevbac:neToW1cmiP0lQOc1WcBg75bL
-cache: bundler
+cache:
+  directories:
+  - vendor/bundle
+bundler_args: --without development --deployment --jobs=3 --retry=3
