@@ -1,0 +1,12 @@
+/usr/bin/ruby1.9.1 -r ./siteconf20150322-3409-nuchv7.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+compiling parser.c
+linking shared-object json/ext/parser.so
+
+make  install
+/usr/bin/install -c -m 0755 parser.so .gem.20150322-3409-1hncfx9/json/ext
+installing default parser libraries

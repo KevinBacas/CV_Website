@@ -1,0 +1,16 @@
+/usr/bin/ruby1.9.1 -r ./siteconf20150322-3409-95z9ni.rb extconf.rb 
+creating Makefile
+
+make  clean
+
+make
+compiling wrapper.c
+compiling bcrypt_ext.c
+compiling crypt_gensalt.c
+compiling crypt_blowfish.c
+compiling crypt.c
+linking shared-object bcrypt_ext.so
+
+make  install
+/usr/bin/install -c -m 0755 bcrypt_ext.so .gem.20150322-3409-1ulvgig
+installing default bcrypt_ext libraries
