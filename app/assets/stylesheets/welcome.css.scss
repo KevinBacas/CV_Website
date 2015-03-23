@@ -3,38 +3,11 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-/* Effect 3 */
-.hi-icon-effect-3 .hi-icon {
-  box-shadow: 0 0 0 4px #fff;
-  -webkit-transition: color 0.3s;
-  -moz-transition: color 0.3s;
-  transition: color 0.3s;
-}
-
-.hi-icon-effect-3 .hi-icon:after {
-  top: -2px;
-  left: -2px;
-  padding: 2px;
-  z-index: -1;
-  background: #fff;
-  -webkit-transition: -webkit-transform 0.2s, opacity 0.3s;
-  -moz-transition: -moz-transform 0.2s, opacity 0.3s;
-  transition: transform 0.2s, opacity 0.3s;
-}
-
-/* Effect 3a */
-.hi-icon-effect-3a .hi-icon {
-  color: #f06060;
-}
-
-.hi-icon-effect-3a .hi-icon:hover {
-  color: #fff;
-}
-
-.hi-icon-effect-3a .hi-icon:hover:after {
-  -webkit-transform: scale(1.3);
-  -moz-transform: scale(1.3);
-  -ms-transform: scale(1.3);
-  transform: scale(1.3);
-  opacity: 0;
+.fa {
+  color : red;
+  transition : padding 0.5s, color 0.5s;
+  &:hover {
+    color : pink;
+    padding-left : 1.5rem;
+  }
 }
