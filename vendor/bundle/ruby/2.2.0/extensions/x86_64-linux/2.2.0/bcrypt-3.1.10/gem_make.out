@@ -1,0 +1,15 @@
+/home/kevbac/.rvm/rubies/ruby-2.2.0/bin/ruby -r ./siteconf20150323-18789-11pk87d.rb extconf.rb 
+creating Makefile
+
+make "DESTDIR=" clean
+
+make "DESTDIR="
+compiling wrapper.c
+compiling bcrypt_ext.c
+compiling crypt_gensalt.c
+compiling crypt_blowfish.c
+compiling crypt.c
+linking shared-object bcrypt_ext.so
+
+make "DESTDIR=" install
+/usr/bin/install -m 0755 bcrypt_ext.so ./.gem.20150323-18789-8jefw5

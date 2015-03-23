@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # Select a ruby version
-ruby '1.9.3'
+ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.1.8'
+gem 'rails', '4.2.0'
 
 # Database
 # Use postgresql as the database for Active Record
@@ -50,8 +50,6 @@ gem 'devise'
 
 # Development only
 group :development do
-  # Call 'debugger' anywhere in the code to stop execution and get a debugger console
-  gem 'debugger'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
