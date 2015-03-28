@@ -2,8 +2,8 @@
 %html
   %head
     %title
-      A soft Helloooooo
-    = stylesheet_link_tag 'welcome', media: 'all'
+      Welcome to my CV
+    = stylesheet_link_tag 'application', media: 'all'
     = csrf_meta_tags
   %body
     .row.panel
@@ -12,4 +12,4 @@
       - if Rails.env.development?
         .panel
           = debug(params)
-    = javascript_include_tag 'welcome'
+    = javascript_include_tag 'application'

@@ -12,6 +12,8 @@ gem 'pg'
 # HTML
 # Use HAML for html
 gem 'haml', '>= 4.0.5'
+# Markdown processor
+gem 'redcarpet'
 
 # CSS
 # Foundation framework for css
