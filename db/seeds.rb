@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+50.times do |cpt|
+  content = Faker::Lorem.sentence(cpt)
+  Post.create(content: content, created_at: cpt.minutes.ago )
+end

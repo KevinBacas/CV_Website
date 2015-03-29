@@ -1,0 +1,15 @@
+!!!
+%html
+  %head
+    %title
+      Last posts
+    = stylesheet_link_tag 'post', media: 'all'
+    = csrf_meta_tags
+  %body
+    .row
+      = yield
+    %footer.row
+      - if Rails.env.development?
+        .panel
+          = debug(params)
+    = javascript_include_tag 'post'

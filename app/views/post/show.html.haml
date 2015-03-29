@@ -1,0 +1,9 @@
+.posts
+  - for post in @posts do
+    .post.panel
+      .content
+        = post.content
+      .timestamp.subheader
+        Posted
+        = time_ago_in_words(post.created_at)
+        ago.
