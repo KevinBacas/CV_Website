@@ -1,0 +1,17 @@
+@import "reveal";
+@import "reveal-theme/beige";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.reveal i{
+  font-family: 'FontAwesome' !important;
+  font-style: normal !important;
+}
+
+.fa {
+  color : red;
+  transition : color 0.5s;
+  &:hover {
+    color : pink;
+  }
+}

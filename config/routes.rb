@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   root 'post#show'
 
   get 'zineb' => 'welcome#index'
+  get 'zineb/why' => 'welcome#why'
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 

@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+# Environment
 # Select a ruby version
 ruby '2.2.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -35,6 +36,8 @@ gem 'coffee-rails'
 gem 'uglifier', '>= 1.3.0'
 # Use RequireJS to manage package for Javascript
 gem 'requirejs-rails'
+# Reveal js for presentations
+gem 'rails-reveal-js'
 
 # Utilities
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder

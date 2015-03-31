@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title
+      <3
+    = stylesheet_link_tag 'reveal_layout', media: 'all'
+    = csrf_meta_tags
+  %body
+    = yield
+    = javascript_include_tag 'reveal_layout'
