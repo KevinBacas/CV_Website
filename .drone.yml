@@ -1,0 +1,20 @@
+image: ruby
+services:
+  - postgresql
+  - redis
+script:
+  - mkdir -p /tmp/bundle
+  - sudo chown -R ubuntu:ubuntu /tmp/bundle
+  - bundle install -j8 --path /tmp/bundle
+  - cp config/database.yml.drone config/database.yml
+  - bundle exec rake db:create db:migrate spec
+cache:
+  - /tmp/bundle
+notify:
+  slack:
+    webhook_url: 'https://hooks.slack.com/services/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'
+    username: 'KevDrone'
+    channel: '#drone'
+    on_started: true
+    on_success: true
+    on_failure: true
