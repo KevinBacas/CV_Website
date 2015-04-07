@@ -1,4 +1,4 @@
-Fig/Docker/Rails example app/bootstrapper
-=========================================
+Fig/Docker/Rails
+================
 
-See the [blog post](https://orchardup.com/blog/use-fig-to-run-a-rails-app) for full details.
+Build status : [![Build Status](http://213.246.56.38/api/badge/github.com/KevinBacas/CV_Website/status.svg?branch=master)](http://213.246.56.38/github.com/KevinBacas/CV_Website)
