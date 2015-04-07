@@ -1,10 +1,8 @@
 source 'https://rubygems.org'
 
 # Environment
-# Select a ruby version
-ruby '2.0.0'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.0.2'
 
 # Database
 # Use postgresql as the database for Active Record
@@ -26,6 +24,8 @@ gem 'sass-rails', '>= 4.0.3'
 gem 'font-awesome-sass', '~> 4.3.0'
 
 # Javascript
+# QQ
+gem 'therubyracer', platforms: :ruby
 # Use jquery as the JavaScript library
 gem 'jquery-rails', '>= 3.1.2'
 # Use AngulasJS
@@ -67,8 +67,7 @@ end
 
 # Production only
 group :production do
-  gem 'rails_12factor', group: :production
-  gem 'puma'
+  gem 'rails_12factor'
 end
 
 # RANDOM

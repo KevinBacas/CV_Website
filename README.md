@@ -1,4 +1,4 @@
-# CV_Website
-My brand new CV Website !
+Fig/Docker/Rails example app/bootstrapper
+=========================================
 
-Build status : [![Build Status](https://travis-ci.org/KevinBacas/CV_Website.svg?branch=master)](https://travis-ci.org/KevinBacas/CV_Website)
+See the [blog post](https://orchardup.com/blog/use-fig-to-run-a-rails-app) for full details.

@@ -1,0 +1,13 @@
+db:
+  image: orchardup/postgresql
+  ports:
+    - "5432"
+web:
+  build: .
+  command: rails s -e development -p 8080
+  volumes:
+    - .:/myapp
+  ports:
+    - "8080:8080"
+  links:
+    - db
