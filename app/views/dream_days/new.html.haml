@@ -1,0 +1,15 @@
+.row
+  = form_for :article, action: "new" do |f|
+    = f.label :owner
+    = f.text_field :owner, placeholder: "eg: " + Faker::Name.name
+
+    = f.label :title
+    = f.text_field :title, placeholder: "eg: " + Faker::Lorem.sentence
+
+    = f.label :date
+    = f.date_field :date, placeholder: Faker::Time.between(2.days.ago, Time.now)
+
+    = f.label :public
+    = f.check_box :public
+
+    = f.submit

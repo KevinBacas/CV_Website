@@ -1,0 +1,12 @@
+.row
+  - if @dream_days.any?
+    %h1
+      Your DreamDays
+    - for dream in @dream_days do
+      .dream
+        .dream_title
+          = dream.title
+  - else
+    %h1
+      You have no DreamDays yet.
+      = link_to "Wanna add some ?", controller: "dream_days", action: "new"

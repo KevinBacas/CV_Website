@@ -7,6 +7,6 @@
 #   Mayor.create(name: 'Emanuel', city: cities.first)
 
 50.times do |cpt|
-  content = Faker::Lorem.sentence(cpt)
+  content = Faker::Lorem.sentence(3)
   Post.create(content: content, created_at: cpt.minutes.ago )
 end

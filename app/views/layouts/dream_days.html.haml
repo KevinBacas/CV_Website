@@ -1,0 +1,10 @@
+!!!
+%html
+  %head
+    %title
+      DreamDays
+    = stylesheet_link_tag 'dream_days', media: 'all'
+    = csrf_meta_tags
+  %body
+    = yield
+    = javascript_include_tag 'dream_days'

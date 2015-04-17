@@ -17,7 +17,6 @@ gem 'redcarpet'
 # CSS
 # Foundation framework for css
 gem 'foundation-rails', '>= 5.4.3.0'
-gem 'foundation-icons-sass-rails'
 # Use SCSS for stylesheets
 gem 'sass-rails', '>= 4.0.3'
 # Font Awesome for sass
@@ -48,6 +47,8 @@ gem 'bcrypt', '>= 3.1.7' # For security reasons, >= 2.1.4 is necessary
 gem 'turbolinks'
 # Data management
 gem 'default_value_for'
+# File upload management
+gem "paperclip", "~> 4.2"
 
 # Authentication
 gem 'omniauth'

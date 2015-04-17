@@ -1,0 +1,77 @@
+@import "foundation/_settings";
+@import "foundation";
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+.full_width {
+  display: table;
+  min-width:100% !important;
+  height: 100% !important;
+}
+
+.pretty_image {
+  background: url("/assets/orions_belt-wallpaper-1920x1080.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.vertical_center {
+  height: 100% !important;
+  display: table-cell;
+  vertical-align: middle;
+
+  .center_text {
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+
+    .days_left {
+      @extend h1;
+      color: white;
+    }
+
+    .logo {
+      @extend h2;
+      color : white;
+      transition: all 0.5s;
+
+      &:hover {
+        @extend h1;
+        color : red;
+        padding : 10px;
+      }
+
+      position: relative;
+      overflow: hidden;
+
+      span {
+        display: inline-block;
+        vertical-align: baseline;
+        zoom: 1;
+        *display: inline;
+        *vertical-align: auto;
+        position: relative;
+        padding: 0 20px;
+
+        &:before, &:after {
+          content: '';
+          display: block;
+          width: 1000px;
+          position: absolute;
+          top: 0.73em;
+          border-top: 2px solid white;
+        }
+
+        &:before { right: 100%; }
+        &:after { left: 100%; }
+      }
+    }
+
+    .dream_day_label {
+      @extend h2;
+      color: white;
+    }
+  }
+}
