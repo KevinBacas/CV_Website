@@ -3,13 +3,13 @@
 one:
   owner: MyString
   date: 2015-04-11
-  type_id: 
+  dream_days_types_id:
   title: MyString
   public: false
 
 two:
   owner: MyString
   date: 2015-04-11
-  type_id: 
+  dream_days_types_id:
   title: MyString
   public: false

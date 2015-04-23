@@ -1,15 +1,10 @@
-.row
-  = form_for :article, action: "new" do |f|
-    = f.label :owner
-    = f.text_field :owner, placeholder: "eg: " + Faker::Name.name
-
-    = f.label :title
-    = f.text_field :title, placeholder: "eg: " + Faker::Lorem.sentence
-
-    = f.label :date
-    = f.date_field :date, placeholder: Faker::Time.between(2.days.ago, Time.now)
-
-    = f.label :public
-    = f.check_box :public
-
-    = f.submit
+.row.full_width.pretty_image{ "ng-app" => "DreamDaysEditionApp" }
+  .vertical_center.text-center{ "ng-controller" => "DreamDaysEditionCtrl" }
+    .center_text
+      #days_left.days_left{ "type" => "text", "pick-a-date" => "date", "pick-a-date-options" => "options" }
+        {{ date }}
+      .logo
+        %span
+          %i#category_logo.fa.fa-heart
+      #dream_day_label.dream_day_label{ "contenteditable" => :true, "ng-model" => "label" }
+        {{ label }}

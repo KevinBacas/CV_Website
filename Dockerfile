@@ -7,4 +7,3 @@ RUN bundle install
 ADD . /myapp
 RUN bundle install
 RUN gem pristine --all
-
